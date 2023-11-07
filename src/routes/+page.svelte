@@ -31,7 +31,7 @@
 	{#if data}
 		{#if $page === 0}
 		    <Table data={tableTennisData} />
-		{#else if $page === 1}
+		{:else if $page === 1}
 		    <Table data={badmintonData} />
 		
 		{/if}
