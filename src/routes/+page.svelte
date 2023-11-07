@@ -26,9 +26,16 @@
 </div>
 
 <div class="mt-8">
-	{#if $page === 0}
-	    <Table data={tableTennisData} />
-	
+	{#if data}
+		{#if $page === 0}
+		    <Table data={tableTennisData} />
+		
+		{/if}
+	{:else}
+	    <div class="flex items-center justify-center text-gray-500">
+	      No data is provided
+	    </div>
 	{/if}
+
 </div>
 
