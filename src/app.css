@@ -5,3 +5,7 @@
 html {
 	font-family: 'Poppins', 'sans-serif';
 }
+
+.table {
+  @apply min-w-[700px];
+}
