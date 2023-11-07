@@ -54,7 +54,7 @@
               <div class="avatar">
                     <div class="mask mask-squircle w-12 h-12">
                         <img
-                            src={row['__EMPTY'].toLowerCase().replace(" ", "-")}
+                            src={'logo-' + row['__EMPTY'].toLowerCase().replace(" ", "-") + '.png'}
                             alt={row['__EMPTY']}
                         />
                     </div>
