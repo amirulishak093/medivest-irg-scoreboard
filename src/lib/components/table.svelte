@@ -60,7 +60,7 @@
                     </div>
               </div>
               <div>
-                <div class="font-bold">{row['__EMPTY']}</div>
+                <div>{row['__EMPTY']}</div>
               </div>
             </div>
           </td>
