@@ -1,17 +1,17 @@
 <script lang="ts">
-      import { read, utils } from "xlsx";
-	import Tab from '$lib/components/tab.svelte';
-	import { page } from '$lib/store';
-	import { onMount } from 'svelte';
+    import { read, utils } from "xlsx";
+    import Tab from '$lib/components/tab.svelte';
+    import { page } from '$lib/store';
+    import { onMount } from 'svelte';
 
     export let data
 
     onMount(async () => {
-    const f = await (await fetch(data.currentFilepath)).arrayBuffer();
-    const wb = read(f);
-
-    let tableTennisData = utils.sheet_to_json(wb.Sheets['TABLE TENNIS']));
-})
+	    const f = await (await fetch(data.currentFilepath)).arrayBuffer();
+	    const wb = read(f);
+	
+	    let tableTennisData = utils.sheet_to_json(wb.Sheets['TABLE TENNIS']));
+     })
 
 
 </script>
