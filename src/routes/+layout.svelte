@@ -10,7 +10,7 @@
     <a href="https://www.medivest.com.my/"><img alt="IRG Logo" class="w-32" src="logo-irg.png" /></a>
   </div>
 
-  <div class="pb-12">
+  <div class="w-full max-w-[800px] mx-auto px-4 pb-12">
     <slot />
   </div>
 </div>
