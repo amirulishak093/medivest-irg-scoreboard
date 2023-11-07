@@ -17,10 +17,10 @@
     let esportData = []
 
     onMount(async () => {
-	    const f = await (await fetch(data.currentFilepath)).arrayBuffer();
-	    const wb = read(f);
+	   const f = await (await fetch(data.currentFilepath)).arrayBuffer();
+	   const wb = read(f);
 	
-	    tableTennisData = utils.sheet_to_json(wb.Sheets['TABLE TENNIS']).slice(1);
+	   tableTennisData = utils.sheet_to_json(wb.Sheets['TABLE TENNIS']).slice(1);
 	   badmintonData = utils.sheet_to_json(wb.Sheets['BADMINTON']).slice(1);
 	   netballData = utils.sheet_to_json(wb.Sheets['NETBALL']).slice(1);
 	   bowlingData = utils.sheet_to_json(wb.Sheets['BOWLING']).slice(1);
@@ -43,6 +43,7 @@
 	<Tab index={5} name="Football" />
 	<Tab index={6} name="Medivest Got Talent" />
 	<Tab index={7} name="E-Sport" />
+	<Tab index={8} name="Overall" />
 </div>
 
 <div class="mt-8">
@@ -63,6 +64,8 @@
 		    <Table data={medivestGotTalentData} />
 		{:else if $page === 7}
 		    <Table data={esportData} />
+		{:else if $page === 8}
+		    <Table data={tableTennisData + badmintonData + netballData + bowlingData + carromData + footballData + medivestGotTalentData + esportData} />
 		{/if}
 	{:else}
 	    <div class="flex items-center justify-center text-gray-500">
