@@ -19,16 +19,16 @@
 
 </script>
 
-<div class="max-w-[800px] mx-auto px-4">
-    <div class="flex justify-center tabs">
-        <Tab index={0} name="Table Tennis" />
-        <Tab index={1} name="Badminton" />
-    </div>
 
-    <div class="mt-8">
-        {#if $page === 0}
-            <Table data={tableTennisData} />
-
-        {/if}
-    </div>
+<div class="flex justify-center tabs">
+	<Tab index={0} name="Table Tennis" />
+	<Tab index={1} name="Badminton" />
 </div>
+
+<div class="mt-8">
+	{#if $page === 0}
+	    <Table data={tableTennisData} />
+	
+	{/if}
+</div>
+
