@@ -16,7 +16,7 @@
 
 </script>
 
-<div class="max-w-[800px] px-4">
+<div class="max-w-[800px] mx-auto px-4">
     <div class="flex justify-center tabs">
         <Tab index={0} name="Table Tennis" />
         <Tab index={1} name="Badminton" />
