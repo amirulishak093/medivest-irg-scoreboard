@@ -52,10 +52,12 @@
           <td>
             <div class="flex items-center space-x-3">
               <div class="avatar">
-                <img
-                    src={("logo-" + row['__EMPTY'].replace(" ", "-")).toLowerCase() + ".png"}
-                    alt={row['__EMPTY']}
-                />
+                    <div class="mask mask-squircle w-12 h-12">
+                        <img
+                            src={("logo-" + row['__EMPTY'].replace(" ", "-")).toLowerCase() + ".png"}
+                            alt={row['__EMPTY']}
+                        />
+                    </div>
               </div>
               <div>
                 <div class="font-bold">{row['__EMPTY']}</div>
