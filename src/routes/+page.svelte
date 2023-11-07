@@ -8,12 +8,14 @@
     export let data
 
     let tableTennisData = []
+    let badmintonData = []
 
     onMount(async () => {
 	    const f = await (await fetch(data.currentFilepath)).arrayBuffer();
 	    const wb = read(f);
 	
 	    tableTennisData = utils.sheet_to_json(wb.Sheets['TABLE TENNIS']).slice(1);
+	   badmintonData = utils.sheet_to_json(wb.Sheets['BADMINTON']).slice(1);
      })
 
 
@@ -29,6 +31,8 @@
 	{#if data}
 		{#if $page === 0}
 		    <Table data={tableTennisData} />
+		{#else if $page === 1}
+		    <Table data={badmintonData} />
 		
 		{/if}
 	{:else}
