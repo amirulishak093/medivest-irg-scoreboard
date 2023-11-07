@@ -53,7 +53,7 @@
             <div class="flex items-center space-x-3">
               <div class="avatar">
                 <img
-                    src={("logo-" + row['__EMPTY'].replace(" ", "-")).toLowerCase()}
+                    src={("logo-" + row['__EMPTY'].replace(" ", "-")).toLowerCase() + ".png"}
                     alt={row['__EMPTY']}
                 />
               </div>
