@@ -13,7 +13,7 @@
 	    const f = await (await fetch(data.currentFilepath)).arrayBuffer();
 	    const wb = read(f);
 	
-	    tableTennisData = utils.sheet_to_json(wb.Sheets['TABLE TENNIS']);
+	    tableTennisData = utils.sheet_to_json(wb.Sheets['TABLE TENNIS']).slice(1);
      })
 
 
