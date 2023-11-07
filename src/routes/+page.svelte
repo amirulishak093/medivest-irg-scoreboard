@@ -6,11 +6,13 @@
 
     export let data
 
+    let tableTennisData = []
+
     onMount(async () => {
 	    const f = await (await fetch(data.currentFilepath)).arrayBuffer();
 	    const wb = read(f);
 	
-	    let tableTennisData = utils.sheet_to_json(wb.Sheets['TABLE TENNIS']));
+	    tableTennisData = utils.sheet_to_json(wb.Sheets['TABLE TENNIS']));
      })
 
 
