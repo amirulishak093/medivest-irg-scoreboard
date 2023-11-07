@@ -10,7 +10,7 @@
     const f = await (await fetch(data.currentFilepath)).arrayBuffer();
     const wb = read(f);
 
-    console.log(utils.sheet_to_json(wb.Sheets['TABLE TENNIS']))
+    let tableTennisData = utils.sheet_to_json(wb.Sheets['TABLE TENNIS']));
 })
 
 
@@ -24,7 +24,7 @@
 
     <div class="mt-8">
         {#if $page === 0}
-            
+            <Table data={tableTennisData} />
 
         {/if}
     </div>
