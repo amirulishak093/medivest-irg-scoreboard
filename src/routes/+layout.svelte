@@ -6,7 +6,7 @@
 </script>
 
 <div class="w-full relative min-h-screen">
-  <div class="max-w-[800px] mx-auto flex justify-center items-center py-4">
+  <div class="max-w-[800px] mx-auto flex justify-center items-center p-4">
     <a href="https://www.medivest.com.my/"><img alt="IRG Logo" class="w-32" src="logo-irg.png" /></a>
   </div>
 
