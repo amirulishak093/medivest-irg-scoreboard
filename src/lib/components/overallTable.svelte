@@ -4,14 +4,13 @@
 
    $: regionWithScores = []
 
-
     $: {
 
         if (data) {
-          console.log(data)
           data.forEach((game) => {
-  
+
             game.forEach((region) => {
+              console.log(region)
               if (region['__EMPTY'] === 'HQ') {
                 regionWithScores.push({
                   region: 'HQ',
