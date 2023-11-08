@@ -26,8 +26,6 @@
       return regionSums;
     }
 
-    console.log(Object.values(calculateRegionSums(data)).forEach((row) => {console.log(row)}))
-
     function calculateTotalScore(row: any) {
       return parseInt(row['__EMPTY_1']) * 4 + parseInt(row['__EMPTY_2']) * 3  + parseInt(row['__EMPTY_3']) * 2  + parseInt(row['__EMPTY_4']) * 1 
     }
