@@ -71,7 +71,7 @@
 		{:else if $page === 8}
 		    <OverallTable data={[...tableTennisData,...badmintonData,...netballData,...bowlingData,...carromData,...footballData,...medivestGotTalentData,...esportData]} />
 		{:else if $page === 9}
-		    <Table data={menAthletes} />
+		    <Table data={menAthletesData} />
 		{/if}
 	{:else}
 	    <div class="flex items-center justify-center text-gray-500">
