@@ -3,6 +3,7 @@
     import Tab from '$lib/components/tab.svelte';
     import Table from '$lib/components/table.svelte';
     import OverallTable from '$lib/components/overallTable.svelte';
+    import BestAthleteTable from '$lib/components/bestAthleteTable.svelte';
     import MGTTable from '$lib/components/mgtTable.svelte';
     import { page } from '$lib/store';
     import { onMount } from 'svelte';
@@ -72,7 +73,7 @@
 		{:else if $page === 8}
 		    <OverallTable data={[...tableTennisData,...badmintonData,...netballData,...bowlingData,...carromData,...footballData,...medivestGotTalentData,...esportData]} />
 		{:else if $page === 9}
-		    <Table data={menAthletesData} />
+		    <BestAthleteTable data={menAthletesData} />
 		{/if}
 	{:else}
 	    <div class="flex items-center justify-center text-gray-500">
