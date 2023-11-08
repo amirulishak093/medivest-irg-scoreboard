@@ -31,6 +31,8 @@
       return parseInt(row['__EMPTY_1']) * 4 + parseInt(row['__EMPTY_2']) * 3  + parseInt(row['__EMPTY_3']) * 2  + parseInt(row['__EMPTY_4']) * 1 
     }
 
+    calculateRegionsSums(data);
+
 </script>
 
 <div class="overflow-x-auto mt-4">
