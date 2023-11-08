@@ -1,8 +1,6 @@
 <script lang="ts">
     export let data = [] as any[]
 
-    console.log(data);
-
     data.sort((a, b) => calculateTotalScore(b) - calculateTotalScore(a));
 
     function calculateTotalScore(row: any) {
