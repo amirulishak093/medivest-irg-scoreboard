@@ -10,7 +10,7 @@
         const region = entry['__EMPTY'];
         if (!regionSums[region]) {
           regionSums[region] = {
-            '__EMPTY': 'HQ',
+            '__EMPTY': region,
             '__EMPTY_1': 0,
             '__EMPTY_2': 0,
             '__EMPTY_3': 0,
