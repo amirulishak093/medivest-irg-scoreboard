@@ -6,6 +6,10 @@
     /*
 
     data.forEach((game) => {
+        console.log(game)   
+    })
+
+    data.forEach((game) => {
         game.forEach((region) => {
             if (region['__EMPTY'] === 'HQ') {
                 if (!regionWithScores[region['__EMPTY']]) {
