@@ -29,8 +29,6 @@
 	   footballData = utils.sheet_to_json(wb.Sheets['FOOTBALL']).slice(1);
 	   medivestGotTalentData = utils.sheet_to_json(wb.Sheets['MEDIVEST GOT TALENT']).slice(1);
 	   esportData = utils.sheet_to_json(wb.Sheets['E-SPORT']).slice(1);
-
-	   console.log(tableTennisData);
      })
 
 
