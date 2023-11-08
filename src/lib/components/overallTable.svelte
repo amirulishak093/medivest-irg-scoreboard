@@ -5,7 +5,9 @@
 
 
     data.forEach((game) => {
-        console.log(game)   
+        if (game['__EMPTY'] === 'HQ') {
+            console.log(game)
+        }
     })
 
 
