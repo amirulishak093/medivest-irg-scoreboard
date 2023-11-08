@@ -77,10 +77,7 @@
             <div class="flex items-center space-x-3">
               <div class="avatar">
                     <div class="mask mask-squircle w-12 h-12">
-                        <img
-                            src={'logo-' + row['__EMPTY'].toLowerCase().replace(/\s+/g, '-') + '.png'}
-                            alt={row['__EMPTY']}
-                        />
+                 
                     </div>
               </div>
               <div>
