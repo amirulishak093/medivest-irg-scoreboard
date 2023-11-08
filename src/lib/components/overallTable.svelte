@@ -26,7 +26,7 @@
       return regionSums;
     }
 
-    console.log(calculateRegionSums(data)
+    console.log(calculateRegionSums(data))
 
 </script>
 
