@@ -3,6 +3,8 @@
     export let data = [] as any[];
     let regionWithScores: { [key: string]: any } = {};
 
+    /*
+
     data.forEach((game) => {
         game.forEach((region) => {
             if (region['__EMPTY'] === 'HQ') {
@@ -28,6 +30,8 @@
     function calculateTotalScore(row: any) {
         return parseInt(row['__EMPTY_1']) * 4 + parseInt(row['__EMPTY_2']) * 3 + parseInt(row['__EMPTY_3']) * 2 + parseInt(row['__EMPTY_4']) * 1;
     }
+
+    */
 </script>
 
 
