@@ -16,7 +16,7 @@
     let footballData = []
     let medivestGotTalentData = []
     let esportData = [] 
-    let menAthletes = []
+    let menAthletesData = []
 
     onMount(async () => {
 	   const f = await (await fetch(data.currentFilepath)).arrayBuffer();
