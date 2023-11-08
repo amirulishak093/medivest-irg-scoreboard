@@ -6,8 +6,6 @@
 
    let regionWithScores = []
 
-    /*
-
     if (data) {
       data.forEach((game) => {
         game.forEach((region) => {
@@ -28,7 +26,6 @@
    
     }
 
-    */
 
      console.log(regionWithScores);
 
