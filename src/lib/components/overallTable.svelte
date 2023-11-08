@@ -26,7 +26,11 @@
       return regionSums;
     }
 
-    console.log(calculateRegionSums(data))
+    data.sort((a, b) => calculateTotalScore(b) - calculateTotalScore(a));
+
+    function calculateTotalScore(row: any) {
+      return parseInt(row['__EMPTY_1']) * 4 + parseInt(row['__EMPTY_2']) * 3  + parseInt(row['__EMPTY_3']) * 2  + parseInt(row['__EMPTY_4']) * 1 
+    }
 
 </script>
 
@@ -66,7 +70,7 @@
     </thead>
 
     <tbody>
-      {#each Object.values(regionSums) as row, index}
+      {#each Object.values(regionSums).sort((a, b) => calculateTotalScore(b) - calculateTotalScore(a)) as row, index}
         <tr class={index === 0 ? "active" : ""}>
           <th>{index + 1}</th>
           <td>
