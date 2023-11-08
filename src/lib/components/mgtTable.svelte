@@ -20,7 +20,7 @@
     <th>Professional Juries (85%)</th>
     <th>Votes (10%)</th>
     <th>Likes (5%)</th>
-      <th> Points </th>
+      <th>Total Points </th>
       </tr>
     </thead>
 
