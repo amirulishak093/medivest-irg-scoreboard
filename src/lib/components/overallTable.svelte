@@ -8,8 +8,9 @@
     $: {
 
         if (data) {
+          console.log(data)
           data.forEach((game) => {
-            console.log(game)
+  
             game.forEach((region) => {
               if (region['__EMPTY'] === 'HQ') {
                 regionWithScores.push({
