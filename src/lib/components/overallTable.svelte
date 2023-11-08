@@ -3,9 +3,10 @@
     export let data = [] as any[];
     let regionWithScores: []
 
+        console.log(data)
 
     data.forEach((game) => {
-        console.log(game)
+
 
 /*
         if (game['__EMPTY'] === 'HQ') {
