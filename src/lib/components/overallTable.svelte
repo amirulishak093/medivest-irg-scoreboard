@@ -10,6 +10,7 @@
         const region = entry['__EMPTY'];
         if (!regionSums[region]) {
           regionSums[region] = {
+            '__EMPTY': entry['__EMPTY'],
             '__EMPTY_1': 0,
             '__EMPTY_2': 0,
             '__EMPTY_3': 0,
@@ -75,7 +76,10 @@
             <div class="flex items-center space-x-3">
               <div class="avatar">
                     <div class="mask mask-squircle w-12 h-12">
-                    
+                        <img
+                            src={'logo-' + row['__EMPTY'].toLowerCase().replace(/\s+/g, '-') + '.png'}
+                            alt={row['__EMPTY']}
+                        />
                     </div>
               </div>
               <div>
