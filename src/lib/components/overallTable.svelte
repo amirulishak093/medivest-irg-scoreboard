@@ -6,10 +6,11 @@
 
     data.forEach((game) => {
         console.log(game)
-        
+
+/*
         if (game['__EMPTY'] === 'HQ') {
             regionWithScores.push({'__EMPTY_1': })
-        }
+        } */
 
     
     })
