@@ -24,9 +24,6 @@
           });
         
            regionWithScores.sort((a, b) => calculateTotalScore(b) - calculateTotalScore(a));
-
-          console.log(regionWithScores)
-        
        
         }
 
