@@ -3,6 +3,7 @@
     import Tab from '$lib/components/tab.svelte';
     import Table from '$lib/components/table.svelte';
     import OverallTable from '$lib/components/overallTable.svelte';
+    import MGTTable from '$lib/components/mgtTable.svelte';
     import { page } from '$lib/store';
     import { onMount } from 'svelte';
 
@@ -31,8 +32,6 @@
 	   medivestGotTalentData = utils.sheet_to_json(wb.Sheets['MEDIVEST GOT TALENT']).slice(1);
 	   esportData = utils.sheet_to_json(wb.Sheets['E-SPORT']).slice(1);
 	   menAthletesData = utils.sheet_to_json(wb.Sheets['MEN ATHLETES']).slice(1);
-
-	   console.log(menAthletesData);
      })
 
 
@@ -67,7 +66,7 @@
 		{:else if $page === 5}
 		    <Table data={footballData} />
 		{:else if $page === 6}
-		    <Table data={medivestGotTalentData} />
+		    <MGTTable data={medivestGotTalentData} />
 		{:else if $page === 7}
 		    <Table data={esportData} />
 		{:else if $page === 8}
