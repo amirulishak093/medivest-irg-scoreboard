@@ -1,6 +1,7 @@
 <script lang="ts">
     import { read, utils } from "xlsx";
     import Tab from '$lib/components/tab.svelte';
+    import Table from '$lib/components/table.svelte';
     import OverallTable from '$lib/components/overallTable.svelte';
     import { page } from '$lib/store';
     import { onMount } from 'svelte';
