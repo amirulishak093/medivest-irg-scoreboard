@@ -31,6 +31,8 @@
 	   medivestGotTalentData = utils.sheet_to_json(wb.Sheets['MEDIVEST GOT TALENT']).slice(1);
 	   esportData = utils.sheet_to_json(wb.Sheets['E-SPORT']).slice(1);
 	   menAthletesData = utils.sheet_to_json(wb.Sheets['MEN ATHLETES']).slice(1);
+
+	   console.log(menAthletesData);
      })
 
 
