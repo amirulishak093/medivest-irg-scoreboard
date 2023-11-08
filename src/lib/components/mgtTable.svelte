@@ -18,8 +18,8 @@
         <th />
         <th>Region</th>
     <th>Professional Juries (85%)</th>
-    <th>Public Votes (15%)</th>
-    <th>External (5%)</th>
+    <th>Votes (10%)</th>
+    <th>Likes (5%)</th>
       <th> Points </th>
       </tr>
     </thead>
