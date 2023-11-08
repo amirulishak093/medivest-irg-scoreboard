@@ -70,7 +70,7 @@
     </thead>
 
     <tbody>
-      {#each Object.values(calculateRegionSums(data)).sort((a, b) => calculateTotalScore(b) - calculateTotalScore(a)) as row, index}
+      {#each Object.values(regionSums).sort((a, b) => calculateTotalScore(b) - calculateTotalScore(a)) as row, index}
         <tr class={index === 0 ? "active" : ""}>
           <th>{index + 1}</th>
           <td>
