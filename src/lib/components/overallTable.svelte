@@ -3,11 +3,14 @@
     export let data = [] as any[];
     let regionWithScores: { [key: string]: any } = {};
 
-    /*
 
     data.forEach((game) => {
         console.log(game)   
     })
+
+
+    /*
+
 
     data.forEach((game) => {
         game.forEach((region) => {
