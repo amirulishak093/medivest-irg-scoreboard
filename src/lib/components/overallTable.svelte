@@ -2,7 +2,11 @@
 <script lang="ts">
     export let data = [] as any[]
 
+    console.log(data)
+
    let regionWithScores = []
+
+    /*
 
     if (data) {
       data.forEach((game) => {
@@ -23,6 +27,8 @@
     
    
     }
+
+    */
 
      console.log(regionWithScores);
 
