@@ -17,6 +17,7 @@
       <tr>
         <th />
         <th>Region</th>
+        <th>Player</th>
         <th>Total Points</th>
       </tr>
     </thead>
@@ -40,6 +41,7 @@
               </div>
             </div>
           </td>
+          <td>{row['__EMPTY_1']}</td>
           <td class="font-bold"> {calculateTotalScore(row)} </td>
         </tr>
       {/each}
