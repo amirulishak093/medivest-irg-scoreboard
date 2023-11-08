@@ -2,7 +2,7 @@
 <script lang="ts">
     export let data = [] as any[]
 
-    let regionWithScores = {}
+    $: regionWithScores = {}
 
 
 
