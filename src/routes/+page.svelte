@@ -38,6 +38,11 @@
 
 </script>
 
+<div class="flex justify-center tabs">
+	<Tab index={8} name="Overall" />
+	<Tab index={9} name="Best Men Athletes" />
+</div>
+
 
 <div class="flex justify-center tabs">
 	<Tab index={0} name="Table Tennis" />
@@ -48,8 +53,6 @@
 	<Tab index={5} name="Football" />
 	<Tab index={6} name="Medivest Got Talent" />
 	<Tab index={7} name="E-Sport" />
-	<Tab index={8} name="Overall" />
-	<Tab index={9} name="Best Men Athletes" />
 </div>
 
 <div class="mt-8">
