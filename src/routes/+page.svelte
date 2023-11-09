@@ -5,7 +5,7 @@
     import OverallTable from '$lib/components/overallTable.svelte';
     import BestAthleteTable from '$lib/components/bestAthleteTable.svelte';
     import MGTTable from '$lib/components/mgtTable.svelte';
-    import { page } from '$lib/store';
+    import { page, isLoading } from '$lib/store';
     import { onMount } from 'svelte';
 
     export let data
@@ -22,8 +22,11 @@
     let womenAthletesData = []
 
     onMount(async () => {
+	   $isLoading = true;
 	   const f = await (await fetch(data.currentFilepath)).arrayBuffer();
 	   const wb = read(f);
+
+	   $isLoading = false;
 	
 	   tableTennisData = utils.sheet_to_json(wb.Sheets['TABLE TENNIS']).slice(1);
 	   badmintonData = utils.sheet_to_json(wb.Sheets['BADMINTON']).slice(1);
