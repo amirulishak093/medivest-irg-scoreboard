@@ -69,7 +69,7 @@
 			  {/if}
 
           </td>
-          <td class="font-bold"> {calculateTotalScore(row)}% </td>
+          <td class="font-bold">{calculateTotalScore(row)}%</td>
         </tr>
       {/each}
     </tbody>
