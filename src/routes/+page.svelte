@@ -19,7 +19,7 @@
     let medivestGotTalentData = []
     let esportData = [] 
     let menAthletesData = []
-    let womemenAthletesData = []
+    let womenAthletesData = []
 
     onMount(async () => {
 	   const f = await (await fetch(data.currentFilepath)).arrayBuffer();
