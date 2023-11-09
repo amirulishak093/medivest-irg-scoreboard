@@ -6,7 +6,8 @@
 	import { fade } from 'svelte/transition';
 	import LoadingSpinner from '$lib/components/loadingSpinner.svelte';
 	import { isLoading } from '$lib/store';
-</script>
+</script> 
+
 
 <div class="w-full relative min-h-screen">
   <div class="max-w-[800px] mx-auto flex justify-center items-center p-4">
