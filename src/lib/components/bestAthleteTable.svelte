@@ -4,7 +4,7 @@
     data.sort((a, b) => calculateTotalScore(b) - calculateTotalScore(a));
 
     function calculateTotalScore(row: any) {
-      return parseInt(row['__EMPTY_1'])
+      return parseInt(row['__EMPTY_2'])
     }
 
 </script>
