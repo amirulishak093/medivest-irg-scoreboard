@@ -7,5 +7,5 @@
 
 <button
 on:click={() => ($page = index)}
-class="btn  btn-sm {$page === index && 'active'}">{name}</button
+class="btn  btn-sm {$page === index && 'btn-active'}">{name}</button
 >
