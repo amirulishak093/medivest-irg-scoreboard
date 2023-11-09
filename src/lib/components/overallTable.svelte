@@ -2,9 +2,13 @@
     export let data = [] as any[];
     export let mgtData = [] as any[];
 
-    let regionSums = {};
+    mgtData.sort((a, b) => calculateMgtTotalScore(b) - calculateMgtTotalScore(a));
 
-    console.log(mgtData);
+    function calculateMgtTotalScore(row: any) {
+      return parseInt(row['__EMPTY_1']) + parseInt(row['__EMPTY_2']) + parseInt(row['__EMPTY_3']);
+    }
+
+    let regionSums = {};
 
     function calculateRegionSums(data) {
       data.forEach((entry) => {
@@ -27,8 +31,18 @@
           regionSums[region]['totalScore'] += attributeValue * (5 - i); // Calculate total score
         }
 
-
       });
+
+      mgtData.forEach((entry, index) => {
+    if (index === 0)
+        regionSums[entry['__EMPTY']}['totalScore'] += 4
+    else if (index === 1)
+        regionSums[entry['__EMPTY']}['totalScore'] += 3
+    else if (index === 2)
+        regionSums[entry['__EMPTY']}['totalScore'] += 2
+    else if (index === 3)
+        regionSums[entry['__EMPTY']}['totalScore'] += 1
+});
 
       return regionSums;
     }
