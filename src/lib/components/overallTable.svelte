@@ -1,7 +1,10 @@
 <script lang="ts">
     export let data = [] as any[];
+    export let mgtData = [] as any[];
 
     let regionSums = {};
+
+    console.log(mgtData);
 
     function calculateRegionSums(data) {
       data.forEach((entry) => {
@@ -23,6 +26,8 @@
           regionSums[region][attributeName] += attributeValue;
           regionSums[region]['totalScore'] += attributeValue * (5 - i); // Calculate total score
         }
+
+
       });
 
       return regionSums;
