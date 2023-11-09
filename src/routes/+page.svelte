@@ -58,7 +58,7 @@
 	<Tab index={1} name="Badminton" />
 	<Tab index={2} name="Netball" />
 	<Tab index={3} name="Bowling" />
-	<Tab index={11} name="Sprint" />
+	<Tab index={11} name="100M Sprint" />
 	<Tab index={4} name="Carrom" />
 	<Tab index={5} name="Football" />
 	<Tab index={7} name="E-Sport" />
