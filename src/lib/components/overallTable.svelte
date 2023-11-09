@@ -41,7 +41,7 @@
     else if (index === 2)
         regionSums[entry['__EMPTY']]['totalScore'] += 2
     else if (index === 3)
-        regionSums[entry['__EMPTY']]['totalScore']] += 1
+        regionSums[entry['__EMPTY']]['totalScore'] += 1
 });
 
       return regionSums;
