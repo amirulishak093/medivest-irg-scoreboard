@@ -51,8 +51,8 @@
 	<Tab index={3} name="Bowling" />
 	<Tab index={4} name="Carrom" />
 	<Tab index={5} name="Football" />
-	<Tab index={6} name="Medivest Got Talent" />
 	<Tab index={7} name="E-Sport" />
+	<Tab index={6} name="Medivest Got Talent" />
 </div>
 
 <div class="mt-8">
