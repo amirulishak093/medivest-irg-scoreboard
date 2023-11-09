@@ -1,11 +1,9 @@
-
 <script lang="ts">
     export let data = [] as any[];
 
     let regionSums = {};
-    
+
     function calculateRegionSums(data) {
-      
       data.forEach((entry) => {
         const region = entry['__EMPTY'];
         if (!regionSums[region]) {
@@ -15,24 +13,22 @@
             '__EMPTY_2': 0,
             '__EMPTY_3': 0,
             '__EMPTY_4': 0,
+            'totalScore': 0,
           };
         }
-    
+
         for (let i = 1; i <= 4; i++) {
           const attributeName = `__EMPTY_${i}`;
-          regionSums[region][attributeName] += entry[attributeName];
+          const attributeValue = parseInt(entry[attributeName]);
+          regionSums[region][attributeName] += attributeValue;
+          regionSums[region]['totalScore'] += attributeValue * (5 - i); // Calculate total score
         }
       });
-    
+
       return regionSums;
     }
 
-    function calculateTotalScore(row: any) {
-      return parseInt(row['__EMPTY_1']) * 4 + parseInt(row['__EMPTY_2']) * 3  + parseInt(row['__EMPTY_3']) * 2  + parseInt(row['__EMPTY_4']) * 1;
-    }
-
     calculateRegionSums(data);
-
 </script>
 
 <div class="overflow-x-auto mt-4">
@@ -71,7 +67,7 @@
     </thead>
 
     <tbody>
-      {#each Object.values(regionSums).sort((a, b) => calculateTotalScore(b) - calculateTotalScore(a)) as row, index}
+      {#each Object.values(regionSums).sort((a, b) => b.totalScore - a.totalScore) as row, index}
         <tr class={index === 0 ? "active" : ""}>
           <th>{index + 1}</th>
           <td>
@@ -94,7 +90,7 @@
           <td class="text-center"> {row['__EMPTY_2']} </td>
           <td class="text-center"> {row['__EMPTY_3']} </td>
           <td class="text-center"> {row['__EMPTY_4']} </td>
-          <td class="font-bold"> {calculateTotalScore(row)} </td>
+          <td class="font-bold"> {row.totalScore} </td>
         </tr>
       {/each}
     </tbody>
