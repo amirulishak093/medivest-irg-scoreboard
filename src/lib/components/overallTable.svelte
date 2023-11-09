@@ -83,6 +83,7 @@
                             alt={row['__EMPTY']}
                         />
                     </div>
+
               </div>
               <div>
                 <div>{row['__EMPTY']}</div>
