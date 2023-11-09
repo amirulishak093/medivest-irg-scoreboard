@@ -8,6 +8,7 @@
     import { page, isLoading } from '$lib/store';
     import { onMount } from 'svelte';
 
+
     export let data
 
     let tableTennisData = []
