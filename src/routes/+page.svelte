@@ -21,6 +21,7 @@
     let esportData = [] 
     let menAthletesData = []
     let womenAthletesData = []
+    let sprintData = []
 
     onMount(async () => {
 	   $isLoading = true;
@@ -39,6 +40,7 @@
 	   esportData = utils.sheet_to_json(wb.Sheets['E-SPORT']).slice(1);
 	   menAthletesData = utils.sheet_to_json(wb.Sheets['MEN ATHLETES']).slice(1);
 	   womenAthletesData = utils.sheet_to_json(wb.Sheets['WOMEN ATHLETES']).slice(1);
+	   sprintData = utils.sheet_to_json(wb.Sheets['SPRINT']).slice(1);
      })
 
 
@@ -56,6 +58,7 @@
 	<Tab index={1} name="Badminton" />
 	<Tab index={2} name="Netball" />
 	<Tab index={3} name="Bowling" />
+	<Tab index={11} name="Sprint" />
 	<Tab index={4} name="Carrom" />
 	<Tab index={5} name="Football" />
 	<Tab index={7} name="E-Sport" />
@@ -72,6 +75,8 @@
 		    <Table data={netballData} />
 		{:else if $page === 3}
 		    <Table data={bowlingData} />	
+		{:else if $page === 11}
+		    <Table data={sprintData} />
 		{:else if $page === 4}
 		    <Table data={carromData} />
 		{:else if $page === 5}
