@@ -19,6 +19,7 @@
     let medivestGotTalentData = []
     let esportData = [] 
     let menAthletesData = []
+    let womemenAthletesData = []
 
     onMount(async () => {
 	   const f = await (await fetch(data.currentFilepath)).arrayBuffer();
@@ -33,6 +34,7 @@
 	   medivestGotTalentData = utils.sheet_to_json(wb.Sheets['MEDIVEST GOT TALENT']).slice(1);
 	   esportData = utils.sheet_to_json(wb.Sheets['E-SPORT']).slice(1);
 	   menAthletesData = utils.sheet_to_json(wb.Sheets['MEN ATHLETES']).slice(1);
+	   womenAthletesData = utils.sheet_to_json(wb.Sheets['WOMEN ATHLETES']).slice(1);
      })
 
 
@@ -41,6 +43,7 @@
 <div class="flex tabs justify-center gap-x-1">
 	<Tab index={8} name="Overall" />
 	<Tab index={9} name="Best Men Athletes" />
+	<Tab index={10} name="Best Women Athletes" />
 </div>
 
 
@@ -77,6 +80,8 @@
 		    <OverallTable data={[...tableTennisData,...badmintonData,...netballData,...bowlingData,...carromData,...footballData,...esportData]} mgtData={medivestGotTalentData} />
 		{:else if $page === 9}
 		    <BestAthleteTable data={menAthletesData} />
+		{:else if $page === 10}
+		    <BestAthleteTable data={womenAthletesData} />
 		{/if}
 	{:else}
 	    <div class="flex items-center justify-center text-gray-500">
