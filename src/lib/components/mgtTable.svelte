@@ -17,9 +17,7 @@
       <tr>
         <th />
         <th>Region</th>
-    <th>Professional Juries (85%)</th>
-    <th>Votes (10%)</th>
-    <th>Likes (5%)</th>
+    <th>Rank</th>
       <th>Total Points </th>
       </tr>
     </thead>
@@ -43,9 +41,34 @@
               </div>
             </div>
           </td>
-          <td class="text-center"> {row['__EMPTY_1']} </td>
-          <td class="text-center"> {row['__EMPTY_2']} </td>
-          <td class="text-center"> {row['__EMPTY_3']} </td>
+          <td class="text-center"> 
+			{#if index === 0}
+				<img
+				  class="w-6 h-6"
+				  src="gold-medal.svg"
+				  alt="Gold Medal"
+				/>
+			  {:else if index === 1}
+				<img
+				  class="w-6 h-6"
+				  src="silver-medal.svg"
+				  alt="Silver Medal"
+				/>
+			  {:else if index == 2}
+				<img
+				  class="w-6 h-6"
+				  src="bronze-medal.svg"
+				  alt="Bronze Medal"
+				/>
+			  {:else if index == 3}
+				<img
+				  class="w-6 h-6"
+				  src="last-medal.svg"
+				  alt="Last Medal"
+				/>
+			  {/if}
+
+          </td>
           <td class="font-bold"> {calculateTotalScore(row)} </td>
         </tr>
       {/each}
