@@ -38,13 +38,13 @@
 
 </script>
 
-<div class="flex justify-center tabs">
+<div class="flex justify-center tabs gap-x-2">
 	<Tab index={8} name="Overall" />
 	<Tab index={9} name="Best Men Athletes" />
 </div>
 
 
-<div class="flex justify-center tabs">
+<div class="flex justify-center tabs gap-x-2">
 	<Tab index={0} name="Table Tennis" />
 	<Tab index={1} name="Badminton" />
 	<Tab index={2} name="Netball" />
