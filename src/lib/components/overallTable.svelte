@@ -119,7 +119,7 @@
             />
           </div>
         </th>
-        <th> Points </th>
+        <th> Total Points </th>
       </tr>
     </thead>
 
