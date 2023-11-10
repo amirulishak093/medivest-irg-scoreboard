@@ -35,6 +35,8 @@
 
       mgtData.forEach((entry, index) => {
 
+    console.log(entry);
+
     if (index === 0) {
         regionSums[entry['__EMPTY']]['__EMPTY_1'] += 1
         regionSums[entry['__EMPTY']]['totalScore'] += 4
