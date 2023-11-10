@@ -8,16 +8,6 @@ $: currentData = data;
 
     data.sort((a, b) => b['__EMPTY_1'] - a['__EMPTY_1']);
 
- $: {
-	if (data) {
-
-	currentData = data
-		 console.log(currentData)
-		
-	}
-
-}
-
 
   
 
@@ -38,7 +28,7 @@ $: currentData = data;
     </thead>
 
     <tbody>
-      {#each data as row, index}
+      {#each currentData as row, index}
         <tr class={index === 0 ? "active" : ""}>
           <th>{index + 1}</th>
           <td>
