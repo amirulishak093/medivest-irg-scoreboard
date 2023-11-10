@@ -3,10 +3,9 @@ import { onMount } from 'svelte';
 
     export let data = [] as any[]
 
-     onMount(() => {
+
     data.sort((a, b) => b['__EMPTY_1'] - a['__EMPTY_1']);
 
-})
 
 
 
