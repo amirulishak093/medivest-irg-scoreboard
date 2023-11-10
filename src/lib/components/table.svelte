@@ -6,7 +6,6 @@ import { onMount } from 'svelte';
      onMount(() => {
     data.sort((a, b) => b['__EMPTY_1'] - a['__EMPTY_1']);
 
-console.log(data)
 })
 
 
