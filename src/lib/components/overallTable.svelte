@@ -2,15 +2,15 @@
     export let data = [] as any[];
     export let mgtData = [] as any[];
 
-/*
-
     mgtData.sort((a, b) => calculateMgtTotalScore(b) - calculateMgtTotalScore(a));
 
     function calculateMgtTotalScore(row: any) {
       return parseInt(row['__EMPTY_1']) + parseInt(row['__EMPTY_2']) + parseInt(row['__EMPTY_3']);
     }
 
+
     let regionSums = {};
+
 
     function calculateRegionSums(data) {
       data.forEach((entry) => {
@@ -26,12 +26,31 @@
           };
         }
 
-        for (let i = 1; i <= 4; i++) {
-          const attributeName = `__EMPTY_${i}`;
-          const attributeValue = parseInt(entry[attributeName]);
-          regionSums[region][attributeName] += attributeValue;
-          regionSums[region]['totalScore'] += attributeValue * (5 - i); // Calculate total score
+   if (index === 0) {
+        if (entry['__EMPTY_1'] !== 0) {
+        regionSums[entry['__EMPTY']]['__EMPTY_1'] += 1
+        regionSums[entry['__EMPTY']]['totalScore'] += 4
         }
+
+    }
+    else if (index === 1) {
+        if (entry['__EMPTY_1'] !== 0) {
+        regionSums[entry['__EMPTY']]['__EMPTY_2'] += 1
+        regionSums[entry['__EMPTY']]['totalScore'] += 3
+        }
+    }
+    else if (index === 2) {
+         if (entry['__EMPTY_1'] !== 0) {
+        regionSums[entry['__EMPTY']]['__EMPTY_3'] += 1
+        regionSums[entry['__EMPTY']]['totalScore'] += 2
+        }
+    }
+    else if (index === 3) {
+         if (entry['__EMPTY_1'] !== 0) {
+        regionSums[entry['__EMPTY']]['__EMPTY_4'] += 1
+        regionSums[entry['__EMPTY']]['totalScore'] += 1
+        }
+    }
 
       });
 
@@ -71,9 +90,8 @@
 
     calculateRegionSums(data);
 
-*/
 
-data.forEach((row) => {console.log(row)});
+
 
 
 </script>
