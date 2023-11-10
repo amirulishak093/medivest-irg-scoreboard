@@ -23,18 +23,11 @@
     let womenAthletesData = []
     let sprintData = []
 
-	   $isLoading = true;
+
 
     onMount(async () => {
-
-	  
 	   const f = await (await fetch(data.currentFilepath)).arrayBuffer();
 	   const wb = read(f);
-
-	   setTimeout(() => {
-		$isLoading =false;
-		},1000);
-
 	
 	   tableTennisData = utils.sheet_to_json(wb.Sheets['TABLE TENNIS']).slice(1);
 	   badmintonData = utils.sheet_to_json(wb.Sheets['BADMINTON']).slice(1);
