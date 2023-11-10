@@ -28,7 +28,6 @@
 	   const f = await (await fetch(data.currentFilepath)).arrayBuffer();
 	   const wb = read(f);
 
-	   $isLoading = false;
 	
 	   tableTennisData = utils.sheet_to_json(wb.Sheets['TABLE TENNIS']).slice(1);
 	   badmintonData = utils.sheet_to_json(wb.Sheets['BADMINTON']).slice(1);
@@ -41,6 +40,9 @@
 	   menAthletesData = utils.sheet_to_json(wb.Sheets['MEN ATHLETES']).slice(1);
 	   womenAthletesData = utils.sheet_to_json(wb.Sheets['WOMEN ATHLETES']).slice(1);
 	   sprintData = utils.sheet_to_json(wb.Sheets['SPRINT']).slice(1);
+
+
+	   $isLoading = false;
      })
 
 
