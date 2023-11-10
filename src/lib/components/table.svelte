@@ -2,29 +2,13 @@
 import { onMount } from 'svelte';
 
     export let data = [] as any[]
-
-
-	$: currentData = []
-
-   $: {
-		if (data.length > 0) {
-	currentData = data;
-
-	}
-}
-
-
-	
-
-	
-
     data.sort((a, b) => b['__EMPTY_1'] - a['__EMPTY_1']);
 
 
 </script>
 
 
-{#if currentData[0]['__EMPTY_1'] !== 0}
+{#if data}
 <div class="overflow-x-auto mt-4">
   <table class="bg-white table">
  
