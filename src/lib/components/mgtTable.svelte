@@ -19,10 +19,9 @@
 
 </script>
 
-
+{if currentData[0][__EMPTY_1] !== 0}
 <div class="overflow-x-auto mt-4">
   <table class="bg-white table">
- 
     <thead>
       <tr>
         <th />
@@ -85,5 +84,9 @@
     </tbody>
   </table>
 </div>
-
+{:else}
+<div class="flex justify-center text-center text-slate-500">
+Not updated yet
+</div>
+{/if}
 
