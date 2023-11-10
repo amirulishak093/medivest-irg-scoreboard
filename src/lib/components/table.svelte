@@ -3,12 +3,25 @@ import { onMount } from 'svelte';
 
     export let data = [] as any[]
 
+
+	let currentData = []
+
+   $: {
+		if (data.length > 0) {
+	currentData = data;
+
+	}
+}
+
+
+	
+
 	
 
     data.sort((a, b) => b['__EMPTY_1'] - a['__EMPTY_1']);
 
 onMount(() => {
-console.log(data)
+console.log(currentData)
 })
 
 </script>
