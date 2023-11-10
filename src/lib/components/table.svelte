@@ -1,7 +1,7 @@
 <script lang="ts">
     export let data = [] as any[]
 
-console.log(data[0]['__EMPTY_1');
+console.log(data[0]['__EMPTY_1']);
 
     data.sort((a, b) => b['__EMPTY_1'] - a['__EMPTY_1']);
 
