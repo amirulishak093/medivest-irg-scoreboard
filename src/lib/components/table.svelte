@@ -1,11 +1,7 @@
 <script lang="ts">
     export let data = [] as any[]
 
-    data.sort((a, b) => calculateTotalScore(b) - calculateTotalScore(a));
-
-    function calculateTotalScore(row: any) {
-      return parseInt(row['__EMPTY_1']) * 4 + parseInt(row['__EMPTY_2']) * 3  + parseInt(row['__EMPTY_3']) * 2  + parseInt(row['__EMPTY_4']) * 1 
-    }
+    data.sort((a, b) => b['__EMPTY_1'] - a['__EMPTY_1']);
 
 </script>
 
@@ -68,7 +64,7 @@
 				/>
 			  {/if}
           </td>
-          <td class="font-bold"> {calculateTotalScore(row)} </td>
+          <td class="font-bold"> {row['__EMPTY_1']} </td>
         </tr>
       {/each}
     </tbody>
