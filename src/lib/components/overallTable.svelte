@@ -2,6 +2,8 @@
     export let data = [] as any[];
     export let mgtData = [] as any[];
 
+/*
+
     mgtData.sort((a, b) => calculateMgtTotalScore(b) - calculateMgtTotalScore(a));
 
     function calculateMgtTotalScore(row: any) {
@@ -68,6 +70,12 @@
     }
 
     calculateRegionSums(data);
+
+*/
+
+data.forEach((row) => {console.log(row)});
+
+
 </script>
 
 <div class="overflow-x-auto mt-4">
