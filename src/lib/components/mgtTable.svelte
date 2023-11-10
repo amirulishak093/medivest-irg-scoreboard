@@ -19,7 +19,7 @@
 
 </script>
 
-{if currentData[0]["__EMPTY_1"] !== 0}
+{#if currentData[0]["__EMPTY_1"] !== 0}
 <div class="overflow-x-auto mt-4">
   <table class="bg-white table">
     <thead>
