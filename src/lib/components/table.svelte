@@ -70,6 +70,6 @@
 </div>
 {:else}
 <div class="flex items-center justify-center text-gray-500">
-No data is provided
-<div>
+  No data is provided
+</div>
 {/if}
