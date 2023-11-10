@@ -48,14 +48,10 @@
 
 </script>
 
-<div class="flex tabs justify-center gap-x-1">
+<div class="flex overflow-x-auto tabs justify-center gap-x-1">
 	<Tab index={8} name="Overall" />
 	<Tab index={9} name="Best Men Athletes" />
 	<Tab index={10} name="Best Women Athletes" />
-</div>
-
-
-<div class="flex tabs justify-center gap-x-1 gap-y-1 mt-1">
 	<Tab index={0} name="Table Tennis" />
 	<Tab index={1} name="Badminton" />
 	<Tab index={2} name="Netball" />
