@@ -6,7 +6,7 @@ import { onMount } from 'svelte';
 $: currentData = data;
 
 
-    data.sort((a, b) => b['__EMPTY_1'] - a['__EMPTY_1']);
+    currentData.sort((a, b) => b['__EMPTY_1'] - a['__EMPTY_1']);
 
 
   
