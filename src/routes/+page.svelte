@@ -23,13 +23,6 @@
     let womenAthletesData = []
     let sprintData = []
 
- $isLoading = true;
-
-
-    if (data) {
-
-	   $isLoading = false;
-   }
 
     onMount(async () => {
 	  
