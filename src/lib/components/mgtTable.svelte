@@ -1,7 +1,17 @@
 <script lang="ts">
     export let data = [] as any[]
 
-    data.sort((a, b) => calculateTotalScore(b) - calculateTotalScore(a));
+    $: currentData = data
+
+    $: {
+	if (currentData) {
+  		currentData.sort((a, b) => calculateTotalScore(b) - calculateTotalScore(a));
+
+	}
+
+    }
+
+  
 
     function calculateTotalScore(row: any) {
       return parseInt(row['__EMPTY_1']) + parseInt(row['__EMPTY_2']) + parseInt(row['__EMPTY_3']);
@@ -23,7 +33,7 @@
     </thead>
 
     <tbody>
-      {#each data as row, index}
+      {#each currentData as row, index}
         <tr class={index === 0 ? "active" : ""}>
           <th>{index + 1}</th>
           <td>
