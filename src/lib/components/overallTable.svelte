@@ -13,7 +13,7 @@
 
 
     function calculateRegionSums(data) {
-      data.forEach((entry) => {
+      data.forEach((entry, index) => {
         const region = entry['__EMPTY'];
         if (!regionSums[region]) {
           regionSums[region] = {
@@ -25,32 +25,6 @@
             'totalScore': 0,
           };
         }
-
-   if (index === 0) {
-        if (entry['__EMPTY_1'] !== 0) {
-        regionSums[entry['__EMPTY']]['__EMPTY_1'] += 1
-        regionSums[entry['__EMPTY']]['totalScore'] += 4
-        }
-
-    }
-    else if (index === 1) {
-        if (entry['__EMPTY_1'] !== 0) {
-        regionSums[entry['__EMPTY']]['__EMPTY_2'] += 1
-        regionSums[entry['__EMPTY']]['totalScore'] += 3
-        }
-    }
-    else if (index === 2) {
-         if (entry['__EMPTY_1'] !== 0) {
-        regionSums[entry['__EMPTY']]['__EMPTY_3'] += 1
-        regionSums[entry['__EMPTY']]['totalScore'] += 2
-        }
-    }
-    else if (index === 3) {
-         if (entry['__EMPTY_1'] !== 0) {
-        regionSums[entry['__EMPTY']]['__EMPTY_4'] += 1
-        regionSums[entry['__EMPTY']]['totalScore'] += 1
-        }
-    }
 
       });
 
