@@ -14,7 +14,6 @@
         <th />
         <th>Region</th>
         <th>Rank</th>
-      <th>Total Points </th>
       </tr>
     </thead>
 
@@ -64,7 +63,6 @@
 				/>
 			  {/if}
           </td>
-          <td class="font-bold"> {row['__EMPTY_1']} </td>
         </tr>
       {/each}
     </tbody>
