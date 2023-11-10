@@ -2,14 +2,25 @@
     export let data = [] as any[];
     export let mgtData = [] as any[];
 
-    mgtData.sort((a, b) => calculateMgtTotalScore(b) - calculateMgtTotalScore(a));
+    $: currentData data;
+    $: currentMgtData = mgtData;
+    $: regionSums = {}
+
+    $: {
+        if (currentData) {
+                calculateRegionSums(data);
+        }
+
+        if (currentMgtData) {
+            mgtData.sort((a, b) => calculateMgtTotalScore(b) - calculateMgtTotalScore(a));
+        }
+    }
+
+
 
     function calculateMgtTotalScore(row: any) {
       return parseInt(row['__EMPTY_1']) + parseInt(row['__EMPTY_2']) + parseInt(row['__EMPTY_3']);
     }
-
-
-    let regionSums = {};
 
 
     function calculateRegionSums(data) {
@@ -80,7 +91,7 @@
       return regionSums;
     }
 
-    calculateRegionSums(data);
+
 
 
 
