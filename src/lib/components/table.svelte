@@ -8,7 +8,7 @@ $: currentData = data;
 
 	$: {
 	if (currentData) {
-
+currentData = data
  currentData.sort((a, b) => b['__EMPTY_1'] - a['__EMPTY_1']);
 }
 
