@@ -18,7 +18,7 @@
         <th />
         <th>Region</th>
     <th>Rank</th>
-      <th>Total Points </th>
+      <th>Score </th>
       </tr>
     </thead>
 
