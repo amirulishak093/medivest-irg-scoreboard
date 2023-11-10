@@ -69,7 +69,7 @@
   </table>
 </div>
 {:else}
-<div class="flex justify-center>
+<div class="flex items-center justify-center text-gray-500">
 No data is provided
 <div>
 {/if}
