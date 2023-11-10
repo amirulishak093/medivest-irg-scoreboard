@@ -25,9 +25,15 @@
 
 
     onMount(async () => {
+
+	   $isLoading = true;
 	  
 	   const f = await (await fetch(data.currentFilepath)).arrayBuffer();
 	   const wb = read(f);
+
+	   setTimeout(() => {
+		$isLoading =false;
+		},1000);
 
 	
 	   tableTennisData = utils.sheet_to_json(wb.Sheets['TABLE TENNIS']).slice(1);
