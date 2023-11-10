@@ -1,13 +1,11 @@
 <script lang="ts">
     export let data = [] as any[]
 
-console.log(data[0]['__EMPTY_1']);
 
     data.sort((a, b) => b['__EMPTY_1'] - a['__EMPTY_1']);
 
 </script>
 
-{#if parseInt(data[0]['__EMPTY_1']) !== 0}
 <div class="overflow-x-auto mt-4">
   <table class="bg-white table">
  
@@ -70,8 +68,4 @@ console.log(data[0]['__EMPTY_1']);
     </tbody>
   </table>
 </div>
-{:else}
-<div class="flex items-center justify-center text-gray-500">
-  No data is provided
-</div>
-{/if}
+
