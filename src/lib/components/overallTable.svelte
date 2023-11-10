@@ -41,7 +41,7 @@
             regionSums[entry['__EMPTY']]['totalScore'] += 2
         }
 
-        else {
+        else if (entry['__EMPTY_1'] === 1) {
             regionSums[entry['__EMPTY']]['__EMPTY_4'] += 1
             regionSums[entry['__EMPTY']]['totalScore'] += 1
         }
