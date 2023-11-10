@@ -17,31 +17,8 @@
       <tr>
         <th />
         <th>Region</th>
-        <th class="text-center">
-          <div class="flex justify-center items-center">
-            <img class="w-6 h-6" src="/gold-medal.svg" alt="Gold Medal" />
-          </div>
-        </th>
-        <th class="text-center">
-          <div class="flex justify-center items-center">
-            <img class="w-6 h-6" src="/silver-medal.svg" alt="Silver Medal" />
-          </div>
-        </th>
-        <th class="text-center">
-          <div class="flex justify-center items-center">
-            <img class="w-6 h-6" src="/bronze-medal.svg" alt="Bronze Medal" />
-          </div>
-        </th>
-        <th class="text-center">
-          <div class="flex justify-center items-center">
-            <img
-              class="w-6 h-6"
-              src="/last-medal.svg"
-              alt="Last Place Medal"
-            />
-          </div>
-        </th>
-        <th> Points </th>
+        <th>Rank</th>
+      <th>Total Points </th>
       </tr>
     </thead>
 
@@ -64,10 +41,33 @@
               </div>
             </div>
           </td>
-          <td class="text-center"> {row['__EMPTY_1']} </td>
-          <td class="text-center"> {row['__EMPTY_2']} </td>
-          <td class="text-center"> {row['__EMPTY_3']} </td>
-          <td class="text-center"> {row['__EMPTY_4']} </td>
+    <td class="text-center"> 
+			{#if index === 0}
+				<img
+				  class="w-6 h-6"
+				  src="gold-medal.svg"
+				  alt="Gold Medal"
+				/>
+			  {:else if index === 1}
+				<img
+				  class="w-6 h-6"
+				  src="silver-medal.svg"
+				  alt="Silver Medal"
+				/>
+			  {:else if index == 2}
+				<img
+				  class="w-6 h-6"
+				  src="bronze-medal.svg"
+				  alt="Bronze Medal"
+				/>
+			  {:else if index == 3}
+				<img
+				  class="w-6 h-6"
+				  src="last-medal.svg"
+				  alt="Last Medal"
+				/>
+			  {/if}
+          </td>
           <td class="font-bold"> {calculateTotalScore(row)} </td>
         </tr>
       {/each}
