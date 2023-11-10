@@ -2,13 +2,16 @@
 import { onMount } from 'svelte';
 
     export let data = [] as any[]
+
+     onMount(() => {
     data.sort((a, b) => b['__EMPTY_1'] - a['__EMPTY_1']);
+})
+
 
 
 </script>
 
 
-{#if data}
 <div class="overflow-x-auto mt-4">
   <table class="bg-white table">
  
@@ -71,11 +74,5 @@ import { onMount } from 'svelte';
     </tbody>
   </table>
 </div>
-{:else}
 
-<div class="flex items-center justify-center text-slate-500">
-No data is provided
-</div>
-
-{/if}
 
