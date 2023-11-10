@@ -23,8 +23,16 @@
     let womenAthletesData = []
     let sprintData = []
 
+ $isLoading = true;
+
+
+    if (data) {
+
+	   $isLoading = false;
+   }
+
     onMount(async () => {
-	   $isLoading = true;
+	  
 	   const f = await (await fetch(data.currentFilepath)).arrayBuffer();
 	   const wb = read(f);
 
@@ -42,7 +50,6 @@
 	   sprintData = utils.sheet_to_json(wb.Sheets['SPRINT']).slice(1);
 
 
-	   $isLoading = false;
      })
 
 
