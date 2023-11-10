@@ -2,7 +2,7 @@
     export let data = [] as any[];
     export let mgtData = [] as any[];
 
-    $: currentData data;
+    $: currentData = data;
     $: currentMgtData = mgtData;
     $: regionSums = {}
 
