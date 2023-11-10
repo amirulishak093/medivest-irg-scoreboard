@@ -1,7 +1,7 @@
 <script lang="ts">
     export let data = [] as any[]
 
-    $: currentData = data
+    $: currentData = data;
 
     $: {
 	if (currentData) {
