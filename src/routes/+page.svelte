@@ -23,10 +23,10 @@
     let womenAthletesData = []
     let sprintData = []
 
+	   $isLoading = true;
 
     onMount(async () => {
 
-	   $isLoading = true;
 	  
 	   const f = await (await fetch(data.currentFilepath)).arrayBuffer();
 	   const wb = read(f);
