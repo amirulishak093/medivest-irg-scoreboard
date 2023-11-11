@@ -42,11 +42,7 @@
 	   menAthletesData = utils.sheet_to_json(wb.Sheets['MEN ATHLETES']).slice(1);
 	   womenAthletesData = utils.sheet_to_json(wb.Sheets['WOMEN ATHLETES']).slice(1);
 	   sprintData = utils.sheet_to_json(wb.Sheets['SPRINT']).slice(1);
-
-
-
      })
-
 
 </script>
 
