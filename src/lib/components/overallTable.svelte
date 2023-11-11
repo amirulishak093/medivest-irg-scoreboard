@@ -135,7 +135,7 @@
           </div>
         </th>
 
-<th class="text-center font-bold"> Total Points </th>
+<th class="text-center"> Total Points </th>
 
 
    
@@ -166,7 +166,7 @@
           <td class="text-center"> {row['__EMPTY_2']} </td>
           <td class="text-center"> {row['__EMPTY_3']} </td>
           <td class="text-center"> {row['__EMPTY_4']} </td>
-<td class="text-center">{row['totalScore']}</td>
+<td class="text-center font-bold">{row['totalScore']}</td>
         </tr>
       {/each}
     </tbody>
