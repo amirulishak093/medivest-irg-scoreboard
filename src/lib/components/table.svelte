@@ -91,7 +91,7 @@ $: currentData = data;
 
 {:else}
 	<div class="flex justify-center items-center text-slate-500">
-	No data
+	Not updated yet
 </div>
 
 
