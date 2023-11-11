@@ -130,7 +130,7 @@
             />
           </div>
         </th>
-      /*  <th> Total Points </th> */
+   
       </tr>
     </thead>
 
@@ -158,7 +158,7 @@
           <td class="text-center"> {row['__EMPTY_2']} </td>
           <td class="text-center"> {row['__EMPTY_3']} </td>
           <td class="text-center"> {row['__EMPTY_4']} </td>
-       /*   <td class="font-bold"> {row.totalScore} </td> */
+
         </tr>
       {/each}
     </tbody>
