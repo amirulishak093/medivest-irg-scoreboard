@@ -15,6 +15,8 @@
         if (currentMgtData) {
             mgtData.sort((a, b) => calculateMgtTotalScore(b) - calculateMgtTotalScore(a));
         }
+
+        console.log(regionSums)
     }
 
 
@@ -40,23 +42,23 @@
 
         if (entry['__EMPTY_1'] === 4) {
             regionSums[entry['__EMPTY']]['__EMPTY_1'] += 1
-            regionSums[entry['__EMPTY']]['totalScore'] += regionSums[entry['__EMPTY']]['__EMPTY_4'] * 4
+            regionSums[entry['__EMPTY']]['totalScore'] += 4
             
         }
 
         else if (entry['__EMPTY_1'] === 3) {
             regionSums[entry['__EMPTY']]['__EMPTY_2'] += 1
-            regionSums[entry['__EMPTY']]['totalScore'] += regionSums[entry['__EMPTY']]['__EMPTY_3'] * 3
+            regionSums[entry['__EMPTY']]['totalScore'] += 3
         }
 
         else if (entry['__EMPTY_1'] === 2) {
             regionSums[entry['__EMPTY']]['__EMPTY_3'] += 1
-            regionSums[entry['__EMPTY']]['totalScore'] += regionSums[entry['__EMPTY']]['__EMPTY_2'] * 2
+            regionSums[entry['__EMPTY']]['totalScore'] += 2
         }
 
         else if (entry['__EMPTY_1'] === 1) {
             regionSums[entry['__EMPTY']]['__EMPTY_4'] += 1
-            regionSums[entry['__EMPTY']]['totalScore'] += regionSums[entry['__EMPTY']]['__EMPTY_1'] * 1
+            regionSums[entry['__EMPTY']]['totalScore'] += 1
         }
 
       });
