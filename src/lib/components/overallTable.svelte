@@ -135,7 +135,7 @@
           </div>
         </th>
 
-<th class="text-center"> Total Points </th>
+<th class="text-center font-bold"> Total Points </th>
 
 
    
