@@ -82,7 +82,7 @@
 		{:else if $page === 5}
 		    <Table data={footballData} />
 		{:else if $page === 6}
-		    <Table data={mgtData} />
+		    <Table data={medivestGotTalentData} />
 		{:else if $page === 7}
 		    <Table data={esportData} />
 		{:else if $page === 8}
