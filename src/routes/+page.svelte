@@ -86,7 +86,7 @@
 		{:else if $page === 7}
 		    <Table data={esportData} />
 		{:else if $page === 8}
-		    <OverallTable data={[...tableTennisData,...badmintonData,...netballData,...bowlingData,...carromData,...footballData,...esportData, ...sprintData, ...mgtData] />
+		    <OverallTable data={[...tableTennisData,...badmintonData,...netballData,...bowlingData,...carromData,...footballData,...esportData, ...sprintData, ...medivestGotTalentData] />
 		{:else if $page === 9}
 		    <BestAthleteTable data={menAthletesData} />
 		{:else if $page === 10}
