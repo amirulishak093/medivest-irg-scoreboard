@@ -39,7 +39,7 @@ $: currentData = data;
 
     <tbody>
       {#each currentData as row, index}
-        <tr class={index === 0 ? "active" : ""}>
+        <tr >
           <th>{index + 1}</th>
           <td>
             <div class="flex items-center space-x-3">
