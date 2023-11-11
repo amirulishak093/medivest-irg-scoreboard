@@ -14,12 +14,6 @@
     }
 
 
-
-    function calculateMgtTotalScore(row: any) {
-      return parseInt(row['__EMPTY_1']) + parseInt(row['__EMPTY_2']) + parseInt(row['__EMPTY_3']);
-    }
-
-
     function calculateRegionSums(data) {
       data.forEach((entry, index) => {
         const region = entry['__EMPTY'];
@@ -59,10 +53,6 @@
 
       return regionSums;
     }
-
-
-
-
 
 
 
